@@ -1,0 +1,222 @@
+.app {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  /* display: flex; */
+  /* flex-direction: row; */
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: max-content auto;
+}
+
+.sidebar > .curtains {
+  /* transform: translate(0%, 0) rotate(-90deg) scale(3); */
+  /* transform: rotate(-90deg); */
+  /* margin: auto; */
+  /* top: 0; */
+  /* left: 0; */
+}
+.sidebar .curtains > div {
+  animation-name: lifting-the-curtains-left;
+}
+.sidebar {
+  position: relative;
+  /* height: 100%; */
+  max-width: 360px;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* z-index: 1; */
+  overflow-x: hidden;
+}
+.profile-picture {
+  position: relative;
+  margin: 10px;
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-picture > img {
+  /* position: relative; */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-width: 2px;
+}
+.profile-name {
+  position: relative;
+  margin: 10px;
+  border-width: 2px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+.profile-description {
+  position: relative;
+  margin: 10px;
+  padding: 2px;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* font-size: medium; */
+}
+
+.link-list {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 5px;
+}
+.link-item {
+  /* padding: 5px; */
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+}
+.link-item > img {
+  width: 25px;
+  height: 25px;
+}
+.theme4 .link-item img {
+  border-radius: 20%;
+  padding: 2px;
+  background-color: var(--color-bg-secondary);
+}
+.link-item > :nth-child(2) {
+  text-decoration: underline;
+}
+
+.content {
+  /* margin-left: auto; */
+  /* max-height: 100%; */
+  /* width: 100%; */
+  /* max-height: 100%; */
+  overflow: hidden;
+}
+.project-list {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  /* align-items: flex-start; */
+  overflow-y: auto;
+}
+.project-item {
+  position: relative;
+  width: 280px;
+  min-height: 200px;
+  padding: 10px;
+  /* display: grid; */
+  /* gap: 5px; */
+}
+.project-item > * {
+  margin-bottom: 5px;
+}
+.project-item :nth-child(1) {
+  font-size: larger;
+}
+.topics {
+  flex-wrap: wrap;
+}
+.topic {
+  border-radius: 20%;
+  padding: 2px;
+}
+
+.curtains {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* margin: 0; */
+  /* animation-name: one-after-the-other;
+	animation-duration: 1000ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(3, 0.88, 0.32, 0.25); */
+}
+.curtains > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: one-after-the-other;
+	animation-duration: 1000ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(3, 0.88, 0.32, 0.25);
+}
+
+.curtains > div:nth-child(1) {
+	z-index: 5;
+	animation-delay: 200ms;
+}
+.curtains > div:nth-child(2) {
+	z-index: 4;
+	animation-delay: 400ms;
+}
+.curtains > div:nth-child(3) {
+	z-index: 3;
+	animation-delay: 600ms;
+}
+@keyframes one-after-the-other {
+	0% {
+    /* transform: translateY(0%); */
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
+    /* width: 100%; */
+		height: 100%;
+    /* top: 0; */
+	}
+	100% {
+		/* transform: translateY(100%); */
+		/* transform: matrix(1, 0, 0, 1, 0, 0); */
+    /* width: 0%; */
+		height: 0%;
+    /* top: -100%; */
+    /* z-index: unset; */
+    /* display: none; */
+    /* visibility: hidden; */
+		/* overflow-y: auto; */
+	}
+}
+@keyframes lifting-the-curtains-up {
+	0% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+@keyframes lifting-the-curtains-left {
+	0% {
+    width: 100%;
+	}
+	100% {
+    width: 0%;
+	}
+}
+
+@media (max-width: 700px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .app {
+    display: block;
+    overflow-x: hidden;
+    /* height: 100dvh; */
+  }
+  .project-item {
+    width: 100%;
+  }
+}

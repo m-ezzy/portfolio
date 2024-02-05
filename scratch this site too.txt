@@ -1,0 +1,6 @@
+you just made the clone of github repositories page
+put this site too in static web projects just like portfolio-site
+do something else, something unique
+showcase your skills, great best projects on portfolio site
+linkedin and github profile pages are most important for recruiters
+add scroll based parallex in new site. make smooth animations with css. you know it best.

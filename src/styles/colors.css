@@ -1,0 +1,84 @@
+/* bg-primary bg-title bg-heading */
+/* bg-secondary bg-body bg-content */
+/* bg-tertiary */
+/* text-bg */
+/* text-heading */
+/* text-content */
+/* border */
+
+.theme1 {
+	--color-bg-primary: #70c1ed;
+  --color-bg-secondary: #095d9d;
+  --color-bg-tertiary: #56a4e8;
+  --color-text-primary: #c0f7ff;
+  --color-text-secondary: #87deec;
+  --color-text-tertiary: rgb(46, 120, 156);
+  --color-border: rgb(0, 255, 242);
+}
+.theme2 {
+  --color-bg-primary: #149700;
+	--color-bg-secondary: #59e055;
+  --color-bg-tertiary: #79d363;
+  --color-text-primary: #c1ffb7;
+  --color-text-secondary: #a6fd96;
+  --color-text-tertiary: rgb(99, 206, 99);
+  --color-border: #00ff1a;
+}
+.theme3 {
+	--color-bg-primary: #FFC5D0;
+  --color-bg-secondary: #F7D6D0;
+  --color-bg-tertiary: #f1a1d6;
+  --color-text-primary: #FB6090;
+  --color-text-secondary: #821D30;
+  --color-text-tertiary: ;
+  --color-border: #ff0090;
+}
+.theme4 {
+	--color-bg-primary: #000000;
+  --color-bg-secondary: #5c5c5c;
+  --color-bg-tertiary: #373737;
+  --color-text-primary: #cecece;
+  --color-text-secondary: #bebebe;
+  --color-text-tertiary: rgb(136, 136, 136);
+  --color-border: #ededed;
+}
+.theme5 {
+	--color-bg-primary: #E4F4F3;
+  --color-bg-secondary: #095d9d;
+  --color-bg-tertiary: #A1DBF1;
+  --color-text-primary: #71D5E4;
+  --color-text-secondary: #000000;
+  --color-text-tertiary: ;
+  --color-border: rgb(41, 29, 203);
+}
+.theme6 {
+	--color-bg-primary: #E4F4F3;
+  --color-bg-secondary: #095d9d;
+  --color-bg-tertiary: #A1DBF1;
+  --color-text-primary: #71D5E4;
+  --color-text-secondary: #c5e0e4;
+  --color-text-tertiary: ;
+  --color-border: rgb(41, 29, 203);
+}
+
+.bg-primary {
+  background-color: var(--color-bg-primary);
+}
+.bg-secondary {
+  background-color: var(--color-bg-secondary);
+}
+.bg-tertiary {
+  background-color: var(--color-bg-tertiary);
+}
+.text-primary {
+  color: var(--color-text-primary);
+}
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+.text-tertiary {
+  color: var(--color-text-tertiary);
+}
+.border {
+  border : 1px solid var(--color-border);
+}
