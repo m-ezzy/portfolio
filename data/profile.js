@@ -1,14 +1,14 @@
 export default {
   "name": "Murtaza Ezzy",
-  "title": "Software Engineer",
+  "title": "Software Developer",
   "image": "profile.jpg",
-  "address": "Casablanca, Morocco",
-  "description": "I am a software engineer based in Ahmedabad, India specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
+  "address": "Ahmedabad, India",
+  "description": "I am a Software Developer based in Ahmedabad, India specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
   "education": [{
     "school": "ENSAM",
-    "degree": "Engineer",
-    "graduated": "July 2019",
-    "description": "Mechanical and Industrial Engineering"
+    "degree": "Masters in Computer Applications",
+    "graduated": "May 2025",
+    "description": ""
   }],
   "work": [{
     "company": "SAP",
