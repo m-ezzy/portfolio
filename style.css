@@ -1,0 +1,477 @@
+/* Google icons configuration */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+span {
+  /* color: white; */
+}
+
+/* making all the images black & white */
+img {
+  filter: grayscale(100%);
+}
+a {
+  /* color: black; */
+}
+
+/* ____________________________________________________________________________________________________ */
+.theme-light {
+  --color-text: black;
+  --color-bg-header: rgba(255, 255, 255, 0.5);
+  --color-text-header: rgba(0, 0, 0, 0.7);
+}
+.theme-dark {
+  --color-text: white;
+  --color-bg-header: rgba(0, 0, 0, 0.4);
+  --color-text-header: rgba(255, 255, 255, 0.8);
+}
+
+/* ____________________________________________________________________________________________________ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+}
+body {
+  font-family: "Inconsolata", sans-serif;
+  /* font-size: 1rem; */
+  /* font-weight: 400; */
+  color: var(--color-text);
+}
+#container {
+  /* z-index: 0; */
+  padding: 10px;
+  /* background-color: #f0f0f0; */
+  /* background-image: linear-gradient(rgba(255,255,255), rgb(168, 255, 189)); */
+  backdrop-filter: blur(10px);
+}
+
+/* ____________________________________________________________________________________________________ */
+header {
+  /* position: sticky; */
+  /* top: 0; */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
+  border-radius: 10px;
+  padding-left: 15px;
+  background-color: var(--color-bg-header);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > span {
+  font-family: "Monoton";
+  color: var(--color-text-header);
+  font-size: 3rem;
+  /* font-weight: 400; */
+  /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: black; */
+}
+nav {
+  text-align: center;
+}
+nav a {
+  margin-right: 20px;
+  color: var(--color-text-header);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--color-text);
+}
+
+/* ____________________________________________________________________________________________________ */
+section {
+  margin-top: 60px;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  background-color: var(--color-bg-header);
+  color: var(--color-text-header);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* ____________________________________________________________________________________________________ */
+#profile {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profile img {
+  /* display: flex; */
+  width: 250px;
+  /* height: auto; */
+  margin-right: 5em;
+  align-self: center;
+}
+#greeting {
+  font-size: 5rem;
+  /* word-break: break-all; */
+  /* word-wrap: break-word; */
+  /* overflow-wrap: anywhere; */
+}
+#greeting p {
+  /* text-overflow: clip; */
+  overflow-wrap: anywhere;
+}
+#greeting span {
+  font-family: "Monoton";
+  word-spacing: 2rem;
+}
+
+/* ____________________________________________________________________________________________________ */
+#about p {
+  margin-left: 10px;
+}
+#about div {
+  padding-left: 40px;
+}
+
+/* ____________________________________________________________________________________________________ */
+textarea {
+  width: 100%;
+  height: 360px;
+  margin-left: 0;
+  border: none;
+  background-color: transparent;
+}
+
+/* ____________________________________________________________________________________________________ */
+.levels {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.levels > div {
+  text-align: center;
+}
+#skills img {
+  width: 80px;
+  /* height: 80px; */
+}
+
+/* ____________________________________________________________________________________________________ */
+#projects > div {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 0.3);
+  transition: background-color 0.2s;
+  border-radius: 4px;
+}
+
+#projects > div:hover {
+  background-color: white;
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+summary a {
+  color: black;
+}
+details > summary {
+  /* list-style-type: '▶️'; */
+  /* list-style-image: url('black.png'); */
+}
+details[open] > summary {
+  /* list-style-type: '🔽'; */
+}
+summary::marker {
+  color: black;
+  font-size: 2em;
+}
+details > p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* ____________________________________________________________________________________________________ */
+#contact {
+}
+#grid {
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: white; */
+}
+#grid > div {
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+  border: 1px solid rgba( 0, 0, 0, 0.3);
+}
+#grid > div * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#grid img {
+  display: inline;
+  width: 70%;
+}
+#grid a {
+  text-decoration: none;
+  color: black;
+}
+
+.hue-rotate {
+  background-color: lightgreen;
+  animation: hue-rotate 10s linear infinite;
+}
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+/*
+.environment :nth-child(15), .environment :nth-child(25), .environment :nth-child(35), .environment :nth-child(45), .environment :nth-child(55), .environment :nth-child(65) {
+  border-right: 1px solid black;
+}
+.environment :nth-child(16), .environment :nth-child(26), .environment :nth-child(36), .environment :nth-child(46), .environment :nth-child(56), .environment :nth-child(66) {
+  border-left: 1px solid black;
+}
+
+.environment :nth-child(66) {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-right-radius: 50%;
+}
+.environment :nth-child(67) {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-top-left-radius: 50%;
+  border-start-end-radius: 50%;
+}
+.environment :nth-child(57) {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-right-radius: 50%;
+}
+
+
+.environment :nth-child(66) {
+  border-top: 1px solid black;
+  border-top-left-radius: 50%;
+}
+
+
+.environment :nth-child(75) {
+  border-right: 10px solid black;
+}
+.environment :nth-child(76) {
+  border-left: 10px solid black;
+}
+.environment :nth-child(85) {
+  border-right: 10px solid black;
+}
+.environment :nth-child(86) {
+  border-left: 10px solid black;
+}
+.environment :nth-child(95) {
+  border-right: 10px solid black;
+}
+.environment :nth-child(96) {
+  border-left: 10px solid black;
+}
+*/
+
+
+
+/*
+.translucent-material {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.breathing-flower {
+  background-color: hotpink;
+  width: 500px;
+  height: 500px;
+  position: static;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  border: 1px solid #333;
+  border-radius: 50%;
+  animation: breathing 5s infinite;
+}
+@keyframes breathing {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+*/
+#drawing-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  /* filter: blur(10px); */
+}
+
+/* use the unique features of web medium to be expressive and interesting */
+.shapes {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  animation: shapes-morphing 5s infinite alternate-reverse;
+  text-align: center;
+  align-content: center;
+  font-size: 2em;
+}
+@keyframes shapes-morphing {
+  0% {
+    /* clip-path: ellipse(0% 0% at 50% 50%); */
+    /* border-radius: 10%; */
+
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+  50% {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+  100% {
+    /* clip-path: none; */
+    /* border-radius: 50%; */
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
+
+
+
+
+/* ____________________________________________________________________________________________________ */
+/* to make webpage responsive */
+@media screen and (max-width: 700px) {
+  #container {
+    background-color: rgb(129, 113, 255);
+    background-color: lightgreen;
+  }
+
+  header {
+    flex-direction: column;
+    word-break: break-all;
+    padding-left: 0px;
+  }
+  header > span {
+    font-size: 7rem;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    margin-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    font-size: 2rem;
+  }
+  nav a:active {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+  }
+
+  section {
+    margin-top: 50px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  #profile {
+    flex-direction: column;
+  }
+  #profile img {
+    width: 80%;
+    margin-right: 0;
+  }
+  #greeting {
+    margin-top: 20px;
+    font-size: 3rem;
+  }
+  #greeting p {
+    text-align: center;
+  }
+
+  textarea {
+    height: 700px;
+  }
+
+  summary {
+    display: block;
+  }
+  summary > span {
+    display: block;
+    text-align: center;
+  }
+
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #grid > div {
+    width: 18vmin;
+    height: 18vmin;
+  }
+  #grid > div * {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  #grid img {
+    width: 60%;
+  }
+
+  #drawing-background {
+    display: none;
+  }
+}
