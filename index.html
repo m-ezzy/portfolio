@@ -33,64 +33,121 @@
 				<!-- <a href="#experience">.Experience()</a> -->
 				<a href="#skills">.Skills()</a>
 				<a href="#projects">.Projects()</a>
-				<a href="#achievements">.Achievments()</a>
+				<!-- <a href="#achievements">.Achievments()</a> -->
 				<a href="#contact">.Contact()</a>
 			</nav>
 		</header>
 		<section id="profile">
-			<img src="assets/profile_picture.png" alt="My Profile Picture">
-			<div id="greeting">
-				<p>Hello there !</p>
-				<p>I'm <span>Murtaza Ezzy</span></p>
+			<div>
+				<img src="assets/profile_picture.png" alt="My Profile Picture">
+				<div id="greeting">
+					<p>Hello there !</p>
+					<p>I'm <span>Murtaza Ezzy</span></p>
+				</div>
+				<!-- Non-breaking space: &nbsp;   Thin space: &thinsp;   Standard space: &#20; -->
 			</div>
-			<!-- Non-breaking space: &nbsp;   Thin space: &thinsp;   Standard space: &#20; -->
 		</section>
 		<section id="about">
 			<h2>{About}</h2>
-			<p>{</p>
 			<div>
-				<p>"firstname": "Murtaza",</p>
-				<p>"lastname": "Ezzy",</p>
-				<p>"job title": "Software Developer",</p>
-				<p>"alternate job title": "Data Analyst",</p>
-				<p>"image": "profile_picture.png",</p> <!-- my_picture.png -->
-				<p>"address": "Ahmedabad, Gujarat, India",</p>
-				<p>"summary": "I am a Software Developer specializing in building and designing exceptional websites, applications, and everything in between."</p>
-				<p>"detail": "I am a Computer Science student with a passion for web development. I have been working with web technologies for over 4 years now. I have experience in building web applications using various popular tools and technologies. I have a deep understanding of many software development concepts. I am always eager to learn new technologies and improve my skills."</p>
+				{
+				<div>
+					<p>"firstname": "Murtaza",</p>
+					<p>"lastname": "Ezzy",</p>
+					<p>"job title": "Software Developer",</p>
+					<p>"alternate job title": "Data Analyst",</p>
+					<p>"image": "profile_picture.png",</p> <!-- my_picture.png -->
+					<p>"address": {</p>
+					<div>
+						<p>"city": "Ahmedabad",</p>
+						<p>"state": "Gujarat",</p>
+						<p>"country": "India"</p>
+					</div>
+					<p>},</p>
+					<p>"summary": "I am a Software Developer specializing in building and designing exceptional websites, applications, and everything in between.",</p>
+					<p>"detail": "I am a Computer Science student with a passion for web development. I have been working with web technologies for over 4 years now. I have experience in building web applications using various popular tools and technologies. I have a deep understanding of many software development concepts. I am always eager to learn new technologies and improve my skills."</p>
+				</div>
+				}
 			</div>
-			<p>}</p>
 		</section>
 		<section id="education">
 			<h2>&lt;Education&gt;</h2>
 			<!-- <p>My academic background</p> -->
-			<textarea>
-				<degree>
-					<school>Sardar Patel University</school>
-					<degree>Bachelors in Computer Applications</degree>
-					<graduated>May 2023</graduated>
-					<location>Vallabh Vidyanagar, Gujarat, India</location>
-					<description></description>
-				</degree>
-				<degree>
-					<school>GLS University</school>
-					<degree>Masters in Computer Applications</degree>
-					<graduated>May 2025</graduated>
-					<location>Ahmedabad, India</location>
-					<description></description>
-				</degree>
-				<course>
-					<name>Cyber Security</name>
-					<organization>TATA Strive</organization>
-					<location>Anand, Gujarat, India</location>
-					<mode>Offline</mode>
-					<graduated>May 2023</graduated>
-					<description></description>
-				</course>
-			</textarea>
+			<!-- <textarea disabled> -->
+			<!-- <xmp> -->
+			<div>
+				<p><span>&lt;degree&gt;</span></p>
+				<div>
+					<p>
+						<span>&lt;university&gt;</span>Sardar Patel University<span>&lt;/university&gt;</span>
+					</p>
+					<p>
+						<span>&lt;degree&gt;</span>Bachelors in Computer Applications<span>&lt;/degree&gt;</span>
+					</p>
+					<p>
+						<span>&lt;graduated&gt;</span>May 2023<span>&lt;/graduated&gt;</span>
+					</p>
+					<p>
+						<span>&lt;location&gt;</span>Vallabh Vidyanagar, Gujarat, India<span>&lt;/location&gt;</span>
+					</p>
+					<p>
+						<span>&lt;description&gt;</span><span>&lt;/description&gt;</span>
+					</p>
+				</div>
+				<p><span>&lt;/degree&gt;</span></p>
+				<p><span>&lt;degree&gt;</span></p>
+				<div>
+					<p>
+						<span>&lt;university&gt;</span>GLS University<span>&lt;/university&gt;</span>
+					</p>
+					<p>
+						<span>&lt;degree&gt;</span>Masters in Computer Applications<span>&lt;/degree&gt;</span>
+					</p>
+					<p>
+						<span>&lt;graduated&gt;</span>May 2025<span>&lt;/graduated&gt;</span>
+					</p>
+					<p>
+						<span>&lt;location&gt;</span>Ahmedabad, India<span>&lt;/location&gt;</span>
+					</p>
+					<p>
+						<span>&lt;description&gt;</span><span>&lt;/description&gt;</span>
+					</p>
+				</div>
+				<p><span>&lt;/degree&gt;</span></p>
+				<p><span>&lt;course&gt;</span></p>
+				<div>
+					<p>
+						<span>&lt;name&gt;</span>Cyber Security<span>&lt;/name&gt;</span>
+					</p>
+					<p>
+						<span>&lt;organization&gt;</span>TATA Strive<span>&lt;/organization&gt;</span>
+					</p>
+					<p>
+						<span>&lt;location&gt;</span>Anand, Gujarat, India<span>&lt;/location&gt;</span>
+					</p>
+					<p>
+						<span>&lt;mode&gt;</span>Offline<span>&lt;/mode&gt;</span>
+					</p>
+					<p>
+						<span>&lt;graduated&gt;</span>May 2023<span>&lt;/graduated&gt;</span>
+					</p>
+					<p>
+						<span>&lt;description&gt;</span><span>&lt;/description&gt;</span>
+					</p>
+				</div>
+				<p><span>&lt;/course&gt;</span></p>
+			</div>
 		</section>
 		<section id="skills">
 			<h2>$Skills$</h2>
-
+			<div id="soft-skills-container">
+				<div class="shapes">Problem Solver</div>
+				<div class="shapes">Analytical</div>
+				<div class="shapes">Adaptive</div>
+				<div class="shapes">Self learner</div>
+				<div class="shapes">Fast learner</div>
+				<!-- <div class="shapes">I easily transform and adapt to the change in situations and technologies</div> -->
+			</div>
 			<div class="levels">
 				<div>
 					<img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" />
@@ -151,7 +208,7 @@
 					<div>React.js</div>
 				</div>
 				<div>
-					<img src="" />
+					<img src="https://seeklogo.com/images/N/nextjs-logo-963D40B71E-seeklogo.com.png" />
 					<div>Next.js</div>
 				</div>
 				<div>
@@ -208,15 +265,10 @@
 			</div>
 			<div class="levels">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/180px-Socket-io.svg.png" alt="Socket.io">
-				<img src="" alt="Prisma">
-				<img src="" alt="Figma">
+				<!-- <img src="" alt="Prisma"> -->
+				<!-- <img src="" alt="Figma"> -->
 				<!-- <label for="disk_d">Figma Knowledge</label> -->
 				<!-- <meter id="disk_d" value="0.2">20%</meter> -->
-			</div>
-
-			<div id="soft-skills-container">
-				<div class="shapes">Adaptive</div>
-				<!-- <div class="shapes">I easily transform and adapt to the change in situations and technologies</div> -->
 			</div>
 		</section>
 		<section id="projects">
@@ -226,173 +278,181 @@
 					<summary>
 						<span>Umbrella</span>
 						<span>University Management System</span>
-						<span>JavaScript * TypeScript * React.js * Next.js * Next-Auth * Prisma * MySQL</span>
 						<span>
-							<a href="https://github.com/m-ezzy/umbrella-nextjs">Code</a> | 
+							<a href="https://github.com/m-ezzy/umbrella-nextjs" target="_blank">Code</a>
 							Live
 						</span>
 					</summary>
-					<p>The most ambitious project that i have undertaken. It is a feature-heavy, complex, really integrated and highly scalable web application that is manages a university.</p>
+					<div>
+						<p>The most ambitious project that i have undertaken. It is a feature-heavy, complex, really integrated and highly scalable web application that is manages a university.</p>
+						<span>JavaScript * TypeScript * React.js * Next.js * Next-Auth * Prisma * MySQL</span>
+						<div class="scroll-carousel">
+							<img src="assets/projects/umbrella/1.png" />
+							<img src="assets/projects/umbrella/2.png" />
+							<img src="assets/projects/umbrella/3.png" />
+							<img src="assets/projects/umbrella/4.png" />
+							<img src="assets/projects/umbrella/5.png" />
+							<img src="assets/projects/umbrella/6.png" />
+							<img src="assets/projects/umbrella/7.png" />
+							<img src="assets/projects/umbrella/8.png" />
+							<img src="assets/projects/umbrella/9.png" />
+							<img src="assets/projects/umbrella/10.png" />
+							<img src="assets/projects/umbrella/11.png" />
+						</div>
+					</div>
 				</details>
-			</div>
-			<div>
 				<details>
 					<summary>
 						<span>Skyland</span>
 						<span>Online Chat Application</span>
-						<span>HTML * CSS * JavaScript * Node.js * Express.js * MySQL * Socket.IO * Peer.js</span>
 						<span>
-							<a href="https://github.com/m-ezzy/skyland">Code</a> | 
+							<a href="https://github.com/m-ezzy/skyland" target="_blank">Code</a>
 							Live
 						</span>
 					</summary>
-					<p>This project started out as an online chatting we application. Though it quickly evolved to a full fledged social media platform where users are capable of chatting in text, media, voice call, video call.</p>
+					<div>
+						<p>This project started out as an online chatting we application. Though it quickly evolved to a full fledged social media platform where users are capable of chatting in text, media, voice call, video call.</p>
+						<span>HTML * CSS * JavaScript * Node.js * Express.js * MySQL * Socket.IO * Peer.js</span>
+						<div class="scroll-carousel">
+							<img src="assets/projects/skyland/1.png" />
+							<img src="assets/projects/skyland/2.png" />
+							<img src="assets/projects/skyland/3.png" />
+							<img src="assets/projects/skyland/4.png" />
+							<img src="assets/projects/skyland/5.png" />
+							<img src="assets/projects/skyland/6.png" />
+							<img src="assets/projects/skyland/7.png" />
+						</div>
+					</div>
 				</details>
-			</div>
-			<div>
 				<details>
 					<summary>
 						<span>Simple Phone</span>
 						<span>Internet Call Application</span>
-						<span>HTML * CSS * JavaScript * Node.js * Peer.js * WebRTC</span>
 						<span>
-							<a href="https://github.com/m-ezzy/simple-phone">Code</a> | 
+							<a href="https://github.com/m-ezzy/simple-phone" target="_blank">Code</a>
 							Live
 						</span>
 					</summary>
-					<p>An Internet Phone with Audio and Video Call.</p>
+					<div>
+						<p>An Internet Phone with Audio and Video Call.</p>
+						<span>HTML * CSS * JavaScript * Node.js * Peer.js * WebRTC</span>
+					</div>
 				</details>
-			</div>
-			<div>
 				<details>
 					<summary>
 						<span>Blogster</span>
 						<span>Blogging Web Application</span>
-						<span>Python * Django * SQLite</span>
 						<span>
-							<a href="https://github.com/m-ezzy/blogster">Code</a> | 
+							<a href="https://github.com/m-ezzy/blogster" target="_blank">Code</a>
 							Live
 						</span>
 					</summary>
-					<p>
-						<div>A simple blogging application perfected to its core.</div>
-						<img src="assets/projects/blogster/1.jpg" />
-						<img src="assets/projects/blogster/2.jpg" />
-						<img src="assets/projects/blogster/3.jpg" />
-					</p>
+					<div>
+						<p>A simple blogging application perfected to its core.</p>
+						<span>Python * Django * SQLite</span>
+					</div>
 				</details>
-			</div>
-			<div>
 				<details>
 					<summary>
 						<span>Chess</span>
 						<span>Game</span>
-						<span>HTML * CSS * JavaScript</span>
 						<span>
-							Code | 
+							<a href="https://github/m-ezzy/GameChess" target="_blank">Code</a>
 							Live
 						</span>
 					</summary>
-					<p>
-						It is an interface to play the game of chess. The legal and non-legal moves are shown as the player tries to move a chess piece. <br />
+					<div>
+						<p>It is an interface to play the game of chess. The legal and non-legal moves are shown as the player tries to move a chess piece.</p>
+						<span>HTML * CSS * JavaScript</span>
 						<img src="assets/projects/chess/" />
-					</p>
+					</div>
 				</details>
-			</div>
-			<div>
 				<details>
 					<summary>
 						<span>Enigma Machine</span>
 						<span>Decryption Algorithm</span>
-						<span>JavaScript * Python</span>
 						<span>
-							<a href="https://github.com/m-ezzy/EnigmaMachine">Code</a> | 
+							<a href="https://github.com/m-ezzy/EnigmaMachine" target="_blank">Code</a>
 							Live
 						</span>
 					</summary>
-					<p>
-						<div>A simulation of the original Enigma Machine and it's Cracking Device "Bombe" developed in Bletchley Park, England.</div>
-					</p>
+					<div>
+						<p>A simulation of the original Enigma Machine and it's Cracking Device "Bombe" developed in Bletchley Park, England.</p>
+						<span>JavaScript * Python</span>
+					</div>
 				</details>
-			</div>
-		</section>
-		<section id="achievements">
-			<h2>[Achievements]</h2>
-			<div>
-				<img src="assets/achievements/1.jpg" />
-				<img src="assets/achievements/2.jpg" />
-				<img src="assets/achievements/3.jpg" />
 			</div>
 		</section>
 		<section id="contact">
 			<h2>&Contact&</h2>
+			<div>
+				<div id="grid">
+					<div></div>
+					<div></div>
+					<div>
+						<a href="assets/resume.pdf" target="_blank">
+							<!-- <span class="material-symbols-outlined">article</span> -->
+							<img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/12.File-64.png" />
+							<div>Resume</div>
+						</a>
+					</div>
+					<div></div>
+					<div></div>
 
-			<div id="grid">
-				<div></div>
-				<div></div>
-				<div>
-					<a href="assets/resume.pdf" target="_blank">
-						<!-- <span class="material-symbols-outlined">article</span> -->
-						<img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/12.File-64.png" />
-						<div>Resume</div>
-					</a>
+					<div>
+						<a href="mailto:murtazaezzy1001@gmail.com">
+							<img src="https://cdn0.iconfinder.com/data/icons/education-340/100/Tilda_Icons_1ed_mail-64.png" />
+							<div>Email</div>
+						</a>
+					</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div>
+						<a href="https://maps.app.goo.gl/c5DBecTw8pk5mbcy9" target="_blank">
+							<img src="https://cdn1.iconfinder.com/data/icons/ui-essential-17/32/UI_Essential_Outline_2_essential-app-ui-location-map-pin-22-64.png" />
+							<div>Location</div>
+						</a>
+					</div>
+					
+					<div></div>
+					<div></div>
+					<div>
+						<a href="https://github.com/m-ezzy" target="_blank">
+							<img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
+							<div>GitHub</div>
+						</a>
+					</div>
+					<div></div>
+					<div></div>
+					
+					<div>
+						<a href="https://www.facebook.com/murtazaezzy1001" target="_blank">
+							<img src="https://cdn0.iconfinder.com/data/icons/brands-outlined-3/194/facebook-social-network-brand-logo-64.png" />
+							<div>Facebook</div>
+						</a>
+					</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div>
+						<a href="https://linktr.ee/murtaza.ezzy" target="_blank">
+							<img src="https://ugc.production.linktr.ee/HwrgaarzTEOljjhlbkV5_Ag7K55YMvWAE9Ul4" />
+							<div>Linktree</div>
+						</a>
+					</div>
+					
+					<div></div>
+					<div></div>
+					<div>
+						<a href="https://www.linkedin.com/in/murtaza-ezzy/" target="_blank">
+							<img src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/In-Blue-Logo.png.original.png" />
+							<div>LinkedIn</div>
+						</a>
+					</div>
+					<div></div>
+					<div></div>
 				</div>
-				<div></div>
-				<div></div>
-
-				<div>
-					<a href="mailto:murtazaezzy1001@gmail.com">
-						<img src="https://cdn0.iconfinder.com/data/icons/education-340/100/Tilda_Icons_1ed_mail-64.png" />
-						<div>Email</div>
-					</a>
-				</div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div>
-					<a href="https://maps.app.goo.gl/c5DBecTw8pk5mbcy9" target="_blank">
-						<img src="https://cdn1.iconfinder.com/data/icons/ui-essential-17/32/UI_Essential_Outline_2_essential-app-ui-location-map-pin-22-64.png" />
-						<div>Location</div>
-					</a>
-				</div>
-				
-				<div></div>
-				<div></div>
-				<div>
-					<a href="https://github.com/m-ezzy" target="_blank">
-						<img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
-						<div>GitHub</div>
-					</a>
-				</div>
-				<div></div>
-				<div></div>
-				
-				<div>
-					<a href="https://www.facebook.com/murtazaezzy1001" target="_blank">
-						<img src="https://cdn0.iconfinder.com/data/icons/brands-outlined-3/194/facebook-social-network-brand-logo-64.png" />
-						<div>Facebook</div>
-					</a>
-				</div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div>
-					<a href="https://linktr.ee/murtaza.ezzy" target="_blank">
-						<img src="https://ugc.production.linktr.ee/HwrgaarzTEOljjhlbkV5_Ag7K55YMvWAE9Ul4" />
-						<div>Linktree</div>
-					</a>
-				</div>
-				
-				<div></div>
-				<div></div>
-				<div>
-					<a href="https://www.linkedin.com/in/murtaza-ezzy/" target="_blank">
-						<img src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/In-Blue-Logo.png.original.png" />
-						<div>LinkedIn</div>
-					</a>
-				</div>
-				<div></div>
-				<div></div>
 			</div>
 
 

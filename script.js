@@ -1,10 +1,16 @@
+/* ideas */
+// light and dark theme based on if it's day or night
+// change the whole theme of webpage based on the holiday and festival on that day.
+
+
+
 /* changing theme code */
-const hour = new Date().getHours();
-let theme = hour >= 6 && hour < 18 ? "light" : "dark";
-// theme = "light";
-// theme = "dark";
-const container = document.getElementById("container");
-container.classList.add("theme-" + theme);
+// const hour = new Date().getHours();
+// let theme = hour >= 6 && hour < 18 ? "light" : "dark";
+// const container = document.getElementById("container");
+// container.classList.add("theme-" + theme);
+
+
 
 /* canvas drawing */
 // change this to moveTo() to make smoother lines instead of making circles that is current situation
@@ -33,14 +39,18 @@ document.body.addEventListener("touchmove", drawColor);
 
 function drawColor(event) {
   // console.log(event);
-  let x = event.layerX; // pageX;
-	let y = event.layerY; // paageY;
+  // let x = event.layerX;
+	// let y = event.layerY;
+	let x = event.pageX;
+	let y = event.pageY;
 	// ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.beginPath();
 	ctx.arc(x, y, radius, 0, Math.PI*2);
 	ctx.fillStyle = gradient;
 	ctx.fill();
 }
+
+
 
 /* contact grid interactivity */
 const grid = document.getElementById("grid");
