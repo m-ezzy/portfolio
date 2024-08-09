@@ -1,6 +1,11 @@
 /* ideas */
 // light and dark theme based on if it's day or night
 // change the whole theme of webpage based on the holiday and festival on that day.
+// Show your problem-solving process
+// Host projects live
+// Include code snippets and explanations of coding decisions
+// Include case studies detailing the development process
+// Highlight unique features & challenges of each project
 
 
 
