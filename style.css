@@ -49,7 +49,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.7);
 }
 header > span {
   font-family: "Monoton";
@@ -76,7 +76,7 @@ h2 {
   font-weight: 400;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.7);
 }
 section > div {
   padding-left: 40px;
@@ -139,7 +139,7 @@ section > div {
 }
 /* use the unique features of web medium to be expressive and interesting */
 .shapes {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
   /* margin-left: auto; */
   /* margin-right: auto; */
   border: 1px solid black;
@@ -202,15 +202,16 @@ details {
   border-radius: 10px;
 }
 summary {
+  border-bottom: 1px solid black;
   padding: 10px;
   gap: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.7);
 }
 summary:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.9);
 }
 summary > span {
   padding: 10px;
@@ -232,7 +233,7 @@ summary a:hover {
 }
 details > div {
   padding: 20px;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.3);
 }
 details p {
   margin-bottom: 20px;
@@ -270,7 +271,7 @@ details p {
 }
 .hue-rotate {
   background-color: lightgreen;
-  animation: hue-rotate 5s linear infinite;
+  animation: hue-rotate 6s linear infinite;
 }
 @keyframes hue-rotate {
   0% {
@@ -300,7 +301,7 @@ details p {
 /* to make webpage responsive */
 @media screen and (max-width: 700px) {
   #container {
-    background-color: rgb(180, 240, 180);
+    background-color: #7186ff;
   }
   header {
     padding-left: 0px;
