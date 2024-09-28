@@ -38,9 +38,7 @@ let gradient = ctx.createLinearGradient(0, 0, innerWidth, 0);
 // gradient.addColorStop("0.5", "white");
 // gradient.addColorStop("1", "gray");
 
-// gradient.addColorStop("0", "#6959e6"); //purple
-// gradient.addColorStop("0", "#cab8ff"); //lightpurple
-gradient.addColorStop("0", "#98e4ff"); //lightblue
+gradient.addColorStop("0", getComputedStyle(document.body).getPropertyValue('--background-color'));
 gradient.addColorStop("1", "white");
 
 document.body.addEventListener("mousemove", drawColor);

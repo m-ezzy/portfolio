@@ -11,6 +11,11 @@ span {
 }
 
 /* ____________________________________________________________________________________________________ */
+:root {
+  /* --background-color: #6959e6; /* purple */
+  /* --background-color: #cab8ff; /* lightpurple */
+  --background-color: #98e4ff; /* lightblue */
+}
 .theme-light {
   --color-text: black;
   --color-bg-header: rgba(255, 255, 255, 0.5);
@@ -301,7 +306,7 @@ details p {
 /* to make webpage responsive */
 @media screen and (max-width: 700px) {
   #container {
-    background-color: #7186ff;
+    background-color: var(--background-color);
   }
   header {
     padding-left: 0px;
