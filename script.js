@@ -30,15 +30,17 @@ let radius = 300;
 // let gradient = ctx.createLinearGradient(0, 0, 0, innerHeight*3);
 let gradient = ctx.createLinearGradient(0, 0, innerWidth, 0);
 
-// gradient.addColorStop("0","lightblue");
+// gradient.addColorStop("0", "lightblue");
 // gradient.addColorStop("0.5", "white");
 // gradient.addColorStop("1.0", "lightpink");
 
-// gradient.addColorStop("0","lightgreen");
+// gradient.addColorStop("0", "lightgreen");
 // gradient.addColorStop("0.5", "white");
 // gradient.addColorStop("1", "gray");
 
-gradient.addColorStop("0","#6959e6");
+// gradient.addColorStop("0", "#6959e6"); //purple
+// gradient.addColorStop("0", "#cab8ff"); //lightpurple
+gradient.addColorStop("0", "#98e4ff"); //lightblue
 gradient.addColorStop("1", "white");
 
 document.body.addEventListener("mousemove", drawColor);
